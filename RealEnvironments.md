@@ -1,0 +1,8 @@
+Azure
+
+AWS
+
+
+OnPremise
+
+Openshift
