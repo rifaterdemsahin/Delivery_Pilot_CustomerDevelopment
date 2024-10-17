@@ -1,1 +1,1 @@
-git pull && git add . && git commit -m "Your commit message" && clear
+git pull && git add . && git commit -m "Delivery Piloy Updates" && clear
