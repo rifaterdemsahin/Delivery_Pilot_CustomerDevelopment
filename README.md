@@ -1,6 +1,6 @@
 # Delivery Pilot Project
 
-## Objective
+[text](README.md)## Objective
 Increase the delivery speed of Enterprise Application Life Cycle Management.
 
 ## Key Results
