@@ -1,36 +1,33 @@
 Create a java hello world application
+# Requirements for MVP
 
-Record the logs to Loki 📜
-Use Loki for application logs
-Use Prometheus for system logs
-Use Grafana 📊 and Prometheus 📈 to display metrics
-Deploy inside Minikube 🛠️ in Codespaces 💻
-Also deploy in Rancher environment
-Steps to Implement
-Create a Java Hello World app
+## Steps to Implement
 
-Record the logs to Loki 📜
+### 1. Record the logs to Loki 📜
+1. Install Loki in your Kubernetes cluster.
+2. Configure your Java Hello World application to send logs to Loki.
+3. Verify logs from the Java application are being recorded in Loki.
 
-Install Loki in your Kubernetes cluster.
-Configure your Java Hello World application to send logs to Loki.
-Verify logs from the Java application are being recorded in Loki.
-Use Loki for application logs
+### 2. Use Loki for application logs
+1. Set up Loki as a log source in Grafana.
+2. Create dashboards in Grafana to visualize application logs from Loki.
 
-Set up Loki as a log source in Grafana.
-Create dashboards in Grafana to visualize application logs from Loki.
-Use Prometheus for system logs
+### 3. Use Prometheus for system logs
+1. Install Promtail to collect system logs.
+2. Configure Promtail to send logs to Prometheus.
+3. Set up Grafana dashboards to visualize system logs from Prometheus.
 
-Install Promtail to collect system logs.
-Configure Promtail to send logs to Prometheus.
-Set up Grafana dashboards to visualize system logs from Prometheus.
-Use Grafana 📊 and Prometheus 📈 to display metrics
+### 4. Use Grafana 📊 and Prometheus 📈 to display metrics
+1. Install Grafana and Prometheus in your Kubernetes cluster.
+2. Configure Prometheus to scrape metrics from your applications.
+3. Create Grafana dashboards to display these metrics.
 
-Install Grafana and Prometheus in your Kubernetes cluster.
-Configure Prometheus to scrape metrics from your applications.
-Create Grafana dashboards to display these metrics.
-Deploy inside Minikube 🛠️ in Codespaces 💻
+### 5. Deploy inside Minikube 🛠️ in Codespaces 💻
+1. Set up a Minikube cluster in your Codespaces environment.
+2. Deploy your applications, Loki, Prometheus, and Grafana in Minikube.
+3. Verify the deployment and functionality.
 
-Set up a Minikube cluster in your Codespaces environment.
-Deploy your applications, Loki, Prometheus, and Grafana in Minikube.
-Verify the deployment and functionality.
-Optional Also deploy in Rancher environment - Set up a Rancher-managed Kubernetes cluster. - Deploy your applications, Loki, Prometheus, and Grafana in the Rancher environment. - Verify the deployment and functionality.
+### Optional: Also deploy in Rancher environment
+1. Set up a Rancher-managed Kubernetes cluster.
+2. Deploy your applications, Loki, Prometheus, and Grafana in the Rancher environment.
+3. Verify the deployment and functionality.
