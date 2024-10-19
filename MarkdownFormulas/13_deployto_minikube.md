@@ -184,4 +184,59 @@ Open your web browser and navigate to `http://hello-world.local`. You should see
 Hello, World!
 ```
 
-Congratulations! 🎉 You've successfully created and deployed a "Hello World" web server using Nginx and Minikube with Ingress.
+## Step 12: Create a LoadBalancer Service 🌐
+
+To create a LoadBalancer service for your Nginx server, update your `service.yaml` file with the following content:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+    name: nginx-helloworld
+spec:
+    type: LoadBalancer
+    selector:
+        app: nginx-helloworld
+    ports:
+    - protocol: TCP
+        port: 80
+        targetPort: 80
+```
+
+Apply the updated service configuration using kubectl:
+
+```sh
+kubectl apply -f service.yaml
+```
+
+Run the following command to get the external IP address assigned to your LoadBalancer service:
+
+```sh
+kubectl get services
+```
+
+## Step 13: Enable Port Forwarding for Minikube 🚀
+
+If you prefer to access your Nginx server without modifying the `/etc/hosts` file or using a LoadBalancer, you can use port forwarding. Run the following command to forward a port from your local machine to the Minikube service:
+
+```sh
+kubectl port-forward service/nginx-helloworld 8080:80
+```
+
+This command forwards port 8080 on your local machine to port 80 on the `nginx-helloworld` service.
+
+Open your web browser and navigate to `http://localhost:8080`. You should see the output:
+
+```
+Hello, World!
+```
+
+Congratulations! 🎉 You've successfully created and deployed a "Hello World" web server using Nginx and Minikube with port forwarding.
+
+Open your web browser and navigate to the external IP address. You should see the output:
+
+```
+Hello, World!
+```
+
+Congratulations! 🎉 You've successfully created and deployed a "Hello World" web server using Nginx and Minikube with Ingress and LoadBalancer.
