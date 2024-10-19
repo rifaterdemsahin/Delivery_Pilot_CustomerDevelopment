@@ -1,7 +1,7 @@
 
 # Requirements for MVP : 
 
-## Steps to Implementkkk
+## Steps to Implement
 
 Create a java hello world application
 ### Use a Ready Container
