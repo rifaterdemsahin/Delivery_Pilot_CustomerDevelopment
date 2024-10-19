@@ -1,13 +1,13 @@
 # Hello World in Java with Docker
-This guide will help you create a simple "Hello World" web server using Nginx and deploy it to Minikube.
+This guide will help you create a simple "Hello World" web server using Nginx and deploy it to Minikube. 🚀
 
-## Prerequisites
+## Prerequisites 📋
 
-- Minikube installed on your machine
-- kubectl installed and configured
-- Basic knowledge of Nginx
+- Minikube installed on your machine 🖥️
+- kubectl installed and configured 🔧
+- Basic knowledge of Nginx 🌐
 
-## Step 1: Create an HTML File
+## Step 1: Create an HTML File 📄
 
 Create a new file named `index.html` with the following content:
 
@@ -23,7 +23,7 @@ Create a new file named `index.html` with the following content:
 </html>
 ```
 
-## Step 2: Create a Dockerfile
+## Step 2: Create a Dockerfile 🐳
 
 In the same directory, create a file named `Dockerfile` with the following content:
 
@@ -35,7 +35,7 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
 ```
 
-## Step 3: Build the Docker Image
+## Step 3: Build the Docker Image 🏗️
 
 Open a terminal, navigate to the directory containing the `Dockerfile`, and run the following command to build the Docker image:
 
@@ -43,23 +43,17 @@ Open a terminal, navigate to the directory containing the `Dockerfile`, and run 
 docker build -t nginx-helloworld .
 ```
 
-## Step 4: Push the Docker Image to a Registry
+## Step 4: Push the Docker Image to a Registry 📤
 
 Tag your Docker image and push it to a container registry that Minikube can access. For example, using Docker Hub:
 
 ```sh
 docker tag nginx-helloworld pexabo/nginx-helloworld
-```sh
-
-docker logout
 docker login
-
 docker push pexabo/nginx-helloworld
-https://hub.docker.com/r/pexabo/nginx-helloworld
-
 ```
 
-## Step 5: Create a Kubernetes Deployment
+## Step 5: Create a Kubernetes Deployment 📦
 
 Create a file named `deployment.yaml` with the following content:
 
@@ -85,7 +79,7 @@ spec:
         - containerPort: 80
 ```
 
-## Step 6: Create a Kubernetes Service
+## Step 6: Create a Kubernetes Service 🌐
 
 Create a file named `service.yaml` with the following content:
 
@@ -105,16 +99,17 @@ spec:
     nodePort: 30000
 ```
 
-## Step 7: Deploy to Minikube
+## Step 7: Deploy to Minikube 🚀
 
 Apply the deployment and service configurations using kubectl:
 
 ```sh
+minikube start
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
 
-## Step 8: Access the Web Server
+## Step 8: Access the Web Server 🌐
 
 Run the following command to get the Minikube IP address:
 
@@ -123,10 +118,70 @@ minikube ip
 ```
 
 Open your web browser and navigate to `http://<minikube-ip>:30000`. You should see the output:
+http://192.168.49.2:30000
+```
+Hello, World!
+```
+curl http://192.168.49.2:30000
+Congratulations! 🎉 You've successfully created and deployed a "Hello World" web server using Nginx and Minikube.
+
+## Step 9: Create an Ingress Resource 🌐
+
+To access your Nginx server using a domain name instead of the NodePort, you can create an Ingress resource. First, ensure that the Minikube ingress addon is enabled:
+
+```sh
+minikube addons enable ingress
+```
+
+Create a file named `ingress.yaml` with the following content:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+    name: nginx-helloworld-ingress
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+    rules:
+    - host: hello-world.local
+        http:
+            paths:
+            - path: /
+                pathType: Prefix
+                backend:
+                    service:
+                        name: nginx-helloworld
+                        port:
+                            number: 80
+```
+
+Apply the Ingress resource using kubectl:
+
+```sh
+kubectl apply -f ingress.yaml
+```
+
+## Step 10: Update /etc/hosts File 📝
+
+To access the Nginx server using the domain name `hello-world.local`, you need to update your `/etc/hosts` file with the Minikube IP address. Run the following command to get the Minikube IP address:
+
+```sh
+minikube ip
+```
+
+Edit your `/etc/hosts` file and add the following line, replacing `<minikube-ip>` with the actual IP address:
+
+```plaintext
+<minikube-ip> hello-world.local
+```
+
+## Step 11: Access the Web Server via Ingress 🌐
+
+Open your web browser and navigate to `http://hello-world.local`. You should see the output:
 
 ```
 Hello, World!
 ```
 
-Congratulations! You've successfully created and deployed a "Hello World" web server using Nginx and Minikube.
-
+Congratulations! 🎉 You've successfully created and deployed a "Hello World" web server using Nginx and Minikube with Ingress.
