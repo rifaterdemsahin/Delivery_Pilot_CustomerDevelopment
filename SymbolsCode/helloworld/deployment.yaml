@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-helloworld
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-helloworld
+  template:
+    metadata:
+      labels:
+        app: nginx-helloworld
+    spec:
+      containers:
+      - name: nginx
+        image: pexabo/nginx-helloworld
+        ports:
+        - containerPort: 80
