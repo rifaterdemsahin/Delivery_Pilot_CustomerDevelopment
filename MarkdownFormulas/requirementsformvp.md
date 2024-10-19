@@ -1,7 +1,13 @@
 
-# Requirements for MVP : Create a java hello world application
+# Requirements for MVP : 
 
 ## Steps to Implement
+
+Create a java hello world application
+### Use a Ready Container
+1. Pull a pre-built Java Hello World container image from a container registry.
+2. Run the container in your Kubernetes cluster.
+3. Verify that the Java Hello World application is running correctly.
 
 ### 1. Record Logs to Loki 📜
 1. Install Loki in your Kubernetes cluster.
