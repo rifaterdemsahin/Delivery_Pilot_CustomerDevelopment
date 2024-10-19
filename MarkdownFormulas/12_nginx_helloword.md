@@ -1,22 +1,25 @@
 # Hello World in Java with Docker
-
-This guide will help you create a simple "Hello World" Java application and run it using Docker.
+This guide will help you create a simple "Hello World" web server using Nginx and run it using Docker.
 
 ## Prerequisites
 
 - Docker installed on your machine
-- Basic knowledge of Java
+- Basic knowledge of Nginx
 
-## Step 1: Create a Java Application
+## Step 1: Create an HTML File
 
-Create a new file named `HelloWorld.java` with the following content:
+Create a new file named `index.html` with the following content:
 
-```java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
 ```
 
 ## Step 2: Create a Dockerfile
@@ -24,20 +27,11 @@ public class HelloWorld {
 In the same directory, create a file named `Dockerfile` with the following content:
 
 ```Dockerfile
-# Use an official OpenJDK runtime as a parent image
-FROM openjdk:11-jre-slim
+# Use the official Nginx image from the Docker Hub
+FROM nginx:alpine
 
-# Set the working directory
-WORKDIR /app
-
-# Copy the current directory contents into the container at /app
-COPY . /app
-
-# Compile the Java program
-RUN javac HelloWorld.java
-
-# Run the Java program
-CMD ["java", "HelloWorld"]
+# Copy the HTML file to the Nginx directory
+COPY index.html /usr/share/nginx/html/index.html
 ```
 
 ## Step 3: Build the Docker Image
@@ -45,7 +39,7 @@ CMD ["java", "HelloWorld"]
 Open a terminal, navigate to the directory containing the `Dockerfile`, and run the following command to build the Docker image:
 
 ```sh
-docker build -t java-helloworld .
+docker build -t nginx-helloworld .
 ```
 
 ## Step 4: Run the Docker Container
@@ -53,13 +47,13 @@ docker build -t java-helloworld .
 Run the Docker container using the following command:
 
 ```sh
-docker run --rm java-helloworld
+docker run --rm -p 8080:80 nginx-helloworld
 ```
 
-You should see the output:
+Open your web browser and navigate to `http://localhost:8080`. You should see the output:
 
 ```
 Hello, World!
 ```
 
-Congratulations! You've successfully created and run a "Hello World" Java application using Docker.
+Congratulations! You've successfully created and run a "Hello World" web server using Nginx and Docker.
