@@ -22,12 +22,15 @@ GitHub Copilot: # Implementation Steps
 2. Navigate to the directory containing the `Dockerfile` and `index.html`.
 3. Run the following command to build the Docker image:
     ```sh
+    cd /workspaces/deliverypilot/SymbolsCode/helloworld
     docker build -t pexabo/nginx-helloworld .
     ```
 
 ## Step 4: Push the Docker Image to Docker Hub
 1. Log in to Docker Hub:
     ```sh
+    docker info
+    docker logout
     docker login
     ```
 2. Push the Docker image to Docker Hub:
@@ -35,8 +38,11 @@ GitHub Copilot: # Implementation Steps
     docker push pexabo/nginx-helloworld
     ```
 
+minikube start 
+
 ## Step 5: Create the Deployment YAML
 1. Create a file named 
+cd /workspaces/deliverypilot/SymbolsCode/helloworld
 
 deployment.yaml
 
@@ -77,11 +83,11 @@ deployment.yaml
 ## Step 7: Verify the Deployment
 1. Check the status of the deployment:
     ```sh
-    kubectl get deployments
+    kubectl get deployments -A
     ```
 2. Check the status of the pods:
     ```sh
-    kubectl get pods
+    kubectl get pods -A
     ```
 
 ## Step 8: Access the Application
