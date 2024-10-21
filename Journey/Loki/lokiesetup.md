@@ -132,6 +132,12 @@ GitHub Copilot: To set up Loki for your HelloWorld project in Minikube, follow t
     kubectl get pods -n loki
     ```
 
+    @rifaterdemsahin ➜ /workspaces/deliverypilot/Journey/Docker (main) $ kubectl get pods -n loki
+NAME                  READY   STATUS    RESTARTS   AGE
+loki-0                1/1     Running   0          3m45s
+loki-promtail-rxhcv   1/1     Running   0          3m45s
+promtail-d4c9g        1/1     Running   0          47s
+
 ## Step 6: Configure Your Application to Send Logs to Loki
 1. Ensure your application logs are being collected by Promtail. Promtail automatically collects logs from all containers in the cluster.
 
