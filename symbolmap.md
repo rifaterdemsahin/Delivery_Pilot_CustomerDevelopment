@@ -6,10 +6,12 @@
 
 
 
-    flowchart TD
-        A["end user(nihat)"] -->|Public
-        Network| B(Go shopping)
-        B("codespaces") --> C{Let me think}
-        C -->|One| D[Hello World]
-        C -->|Two| E[Grafana]
-        C{"loadbalancer"} -->|Three| F[fa:fa-car Prometheus]
+flowchart TD
+    A["end user(nihat)"] -->|Public
+    Network| B(Go shopping)
+    B("codespaces") --> C{Let me think}
+    C -->|OneTask| D[Hello World] -->|App Logs| n1
+    C -->|ThreeTask| E[Grafana] --> F
+    C{"loadbalancer"} -->|TwoTask| F[fa:fa-car Prometheus]
+    
+	n1["Loki"]
