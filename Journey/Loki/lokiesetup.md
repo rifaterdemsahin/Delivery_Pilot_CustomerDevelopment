@@ -148,6 +148,20 @@ promtail-d4c9g        1/1     Running   0          47s
     ```
 2. Open a web browser and navigate to `http://localhost:3100` to access Loki.
 
+## Step 7: Access Loki Endpoints
+1. Forward the Loki port to access it locally:
+    ```sh
+    kubectl port-forward svc/loki 3100:3100 -n loki
+    ```
+2. Open a web browser and navigate to the following endpoints to access Loki:
+    - Metrics: `http://localhost:3100/metrics`
+    - Query: `http://localhost:3100/loki/api/v1/query`
+    - Query Range: `http://localhost:3100/loki/api/v1/query_range`
+    - Labels: `http://localhost:3100/loki/api/v1/labels`
+    - Label Values: `http://localhost:3100/loki/api/v1/label/{label_name}/values`
+    - Series: `http://localhost:3100/loki/api/v1/series`
+    - Tail: `http://localhost:3100/loki/api/v1/tail`
+
 ## Step 8: Visualize Logs in Grafana
 1. Install Grafana using Helm:
     ```sh

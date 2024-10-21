@@ -1,0 +1,7 @@
+    - Metrics: `http://localhost:3100/metrics`
+    - Query: `http://localhost:3100/loki/api/v1/query`
+    - Query Range: `http://localhost:3100/loki/api/v1/query_range`
+    - Labels: `http://localhost:3100/loki/api/v1/labels`
+    - Label Values: `http://localhost:3100/loki/api/v1/label/{label_name}/values`
+    - Series: `http://localhost:3100/loki/api/v1/series`
+    - Tail: `http://localhost:3100/loki/api/v1/tail`
