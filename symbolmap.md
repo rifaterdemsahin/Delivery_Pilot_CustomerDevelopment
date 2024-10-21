@@ -3,7 +3,6 @@
 
     ## Diagram
 
-    ```mermaid
         flowchart TD
             A["end user(nihat)"] -->|Public
             Network| B(Go shopping)
@@ -11,4 +10,3 @@
             C -->|One| D[Hello World]
             C -->|Two| E[Grafana]
             C{"loadbalancer"} -->|Three| F[fa:fa-car Prometheus]
-    ```
