@@ -13,3 +13,5 @@ flowchart TD
     C{"🔀 loadbalancer"} -->|⚙️ TwoTask| F[🚗 Prometheus]
     E[📊 Grafana] --> n1
     n1["📦 Loki"]
+
+B "https://fictional-space-fiesta-675v46v6q35vpw-9090.app.github.dev/" "my code space url"
