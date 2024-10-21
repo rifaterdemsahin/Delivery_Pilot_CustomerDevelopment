@@ -163,14 +163,19 @@ promtail-d4c9g        1/1     Running   0          47s
     - Tail: `http://localhost:3100/loki/api/v1/tail`
 
 ## Step 8: Visualize Logs in Grafana
+kubectl get pods -A
+
 1. Install Grafana using Helm:
     ```sh
     helm install grafana grafana/grafana --namespace=loki --set "service.type=NodePort"
     ```
+
 2. Get the Grafana admin password:
     ```sh
     kubectl get secret --namespace loki grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
     ```
+    5nCm0guzqs28BHsuCvphLMTZg5r74ljEK3GwKlWk
+    
 3. Forward the Grafana port to access it locally:
     ```sh
     kubectl port-forward svc/grafana 3000:80 -n loki
