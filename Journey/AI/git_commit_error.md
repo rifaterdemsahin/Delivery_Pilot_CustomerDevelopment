@@ -1,0 +1,247 @@
+2024-10-21 18:12:34.003 [info] [main] Log level: Info
+2024-10-21 18:12:34.004 [info] [main] Validating found git in: "/opt/homebrew/bin/git"
+2024-10-21 18:12:34.023 [info] [main] Using git "2.44.0" from "/opt/homebrew/bin/git"
+2024-10-21 18:12:34.024 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-21 18:12:34.024 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-21 18:12:36.431 [info] [main] Log level: Info
+2024-10-21 18:12:36.431 [info] [main] Validating found git in: "/opt/homebrew/bin/git"
+2024-10-21 18:12:36.431 [info] [main] Using git "2.44.0" from "/opt/homebrew/bin/git"
+2024-10-21 18:12:36.431 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-21 18:12:36.435 [info] > git rev-parse --show-toplevel [6ms]
+2024-10-21 18:12:36.442 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-10-21 18:12:36.446 [info] [Model][openRepository] Opened repository: /Users/rifaterdemsahin/projects/deliverypilot
+2024-10-21 18:12:36.454 [info] > git rev-parse --show-toplevel [7ms]
+2024-10-21 18:12:36.455 [info] > git config --get commit.template [9ms]
+2024-10-21 18:12:36.456 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:12:36.456 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:12:36.460 [info] > git rev-parse --show-toplevel [5ms]
+2024-10-21 18:12:36.466 [info] > git rev-parse refs/remotes/origin/main [10ms]
+2024-10-21 18:12:36.469 [info] > git rev-parse --show-toplevel [7ms]
+2024-10-21 18:12:36.474 [info] > git rev-parse --show-toplevel [4ms]
+2024-10-21 18:12:36.480 [info] > git rev-parse --show-toplevel [5ms]
+2024-10-21 18:12:36.486 [info] > git rev-parse --show-toplevel [5ms]
+2024-10-21 18:12:36.487 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-21 18:12:36.504 [info] > git status -z -uall [38ms]
+2024-10-21 18:12:36.512 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:12:36.513 [info] > git config --get commit.template [5ms]
+2024-10-21 18:12:36.513 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:12:36.513 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:12:36.516 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:12:36.518 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:12:36.522 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:12:36.536 [info] > git merge-base refs/heads/main refs/remotes/origin/main [13ms]
+2024-10-21 18:12:36.544 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [7ms]
+2024-10-21 18:12:36.552 [info] > git diff --name-status -z --diff-filter=ADMR 1bc04039700046387267ea6197c2b5a45e541338...refs/remotes/origin/main [8ms]
+2024-10-21 18:12:36.567 [info] > git status -z -uall [49ms]
+2024-10-21 18:12:36.573 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:12:36.594 [info] > git config --local branch.main.vscode-merge-base [20ms]
+2024-10-21 18:12:36.605 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [10ms]
+2024-10-21 18:12:36.622 [info] > git check-ignore -v -z --stdin [7ms]
+2024-10-21 18:12:37.040 [info] > git fetch [595ms]
+2024-10-21 18:12:37.044 [info] > git config --get commit.template [4ms]
+2024-10-21 18:12:37.046 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:12:37.046 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:12:37.050 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2024-10-21 18:12:37.072 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/loki_logs.md [5ms]
+2024-10-21 18:12:37.073 [info] > git show --textconv :Journey/Loki/loki_logs.md [6ms]
+2024-10-21 18:12:37.078 [info] > git cat-file -s b24f630410c98b2dd2646900cb78d23f7db65c0b [6ms]
+2024-10-21 18:12:37.083 [info] > git status -z -uall [33ms]
+2024-10-21 18:12:37.090 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:12:37.095 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:12:37.100 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-10-21 18:12:37.104 [info] > git check-ignore -v -z --stdin [4ms]
+2024-10-21 18:12:38.131 [info] > git config --get commit.template [7ms]
+2024-10-21 18:12:38.133 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [8ms]
+2024-10-21 18:12:38.134 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:12:38.139 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:12:38.179 [info] > git status -z -uall [39ms]
+2024-10-21 18:12:38.185 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:12:38.189 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:12:38.194 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-10-21 18:12:38.233 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/loki_logs.md [5ms]
+2024-10-21 18:12:38.238 [info] > git cat-file -s b24f630410c98b2dd2646900cb78d23f7db65c0b [5ms]
+2024-10-21 18:12:38.243 [info] > git show --textconv :Journey/Loki/loki_logs.md [4ms]
+2024-10-21 18:13:22.456 [info] > git check-ignore -v -z --stdin [9ms]
+2024-10-21 18:13:27.534 [info] > git check-ignore -v -z --stdin [11ms]
+2024-10-21 18:13:28.261 [info] > git config --get commit.template [8ms]
+2024-10-21 18:13:28.264 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [9ms]
+2024-10-21 18:13:28.265 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:13:28.271 [info] > git rev-parse refs/remotes/origin/main [7ms]
+2024-10-21 18:13:28.313 [info] > git status -z -uall [41ms]
+2024-10-21 18:13:28.320 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:13:28.325 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:13:28.331 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:13:31.182 [info] > git check-ignore -v -z --stdin [8ms]
+2024-10-21 18:13:33.332 [info] > git config --get commit.template [5ms]
+2024-10-21 18:13:33.333 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:13:33.334 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:13:33.338 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2024-10-21 18:13:33.380 [info] > git status -z -uall [41ms]
+2024-10-21 18:13:33.386 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:13:33.391 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:13:33.397 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:13:39.423 [info] > git check-ignore -v -z --stdin [5ms]
+2024-10-21 18:13:39.973 [info] > git config --get commit.template [9ms]
+2024-10-21 18:13:39.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [10ms]
+2024-10-21 18:13:39.976 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:13:39.982 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2024-10-21 18:13:40.026 [info] > git status -z -uall [43ms]
+2024-10-21 18:13:40.033 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:13:40.038 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:13:40.043 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-10-21 18:13:45.865 [info] > git check-ignore -v -z --stdin [6ms]
+2024-10-21 18:13:46.113 [info] > git check-ignore -v -z --stdin [4ms]
+2024-10-21 18:14:30.731 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [7ms]
+2024-10-21 18:14:30.731 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [6ms]
+2024-10-21 18:14:30.998 [info] > git check-ignore -v -z --stdin [4ms]
+2024-10-21 18:14:31.823 [info] > git config --get commit.template [5ms]
+2024-10-21 18:14:31.825 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:14:31.826 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:14:31.831 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2024-10-21 18:14:31.866 [info] > git status -z -uall [35ms]
+2024-10-21 18:14:31.872 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:14:31.877 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:14:31.882 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-10-21 18:14:36.095 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full 1bc04039700046387267ea6197c2b5a45e541338 [42ms]
+2024-10-21 18:14:36.175 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full 1bc04039700046387267ea6197c2b5a45e541338 [32ms]
+2024-10-21 18:14:46.966 [info] > git add -A -- . [81ms]
+2024-10-21 18:14:46.971 [info] > git config --get commit.template [4ms]
+2024-10-21 18:14:46.972 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [4ms]
+2024-10-21 18:14:46.973 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:14:46.977 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2024-10-21 18:14:46.984 [info] > git status -z -uall [6ms]
+2024-10-21 18:14:46.991 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:14:46.998 [info] > git config --local branch.main.vscode-merge-base [6ms]
+2024-10-21 18:14:47.005 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:14:47.005 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [18ms]
+2024-10-21 18:14:47.010 [info] > git config --get commit.template [4ms]
+2024-10-21 18:14:47.016 [info] > git config --get commit.template [5ms]
+2024-10-21 18:14:47.019 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [8ms]
+2024-10-21 18:14:47.020 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:14:47.025 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:14:47.032 [info] > git status -z -uall [7ms]
+2024-10-21 18:14:47.040 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:14:47.046 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:14:47.054 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [7ms]
+2024-10-21 18:14:47.061 [info] > git merge-base refs/heads/main refs/remotes/origin/main [6ms]
+2024-10-21 18:14:47.067 [info] > git rev-list --count --left-right refs/heads/main...refs/remotes/origin/main [5ms]
+2024-10-21 18:14:47.075 [info] > git diff --name-status -z --diff-filter=ADMR 1bc04039700046387267ea6197c2b5a45e541338...refs/remotes/origin/main [7ms]
+2024-10-21 18:14:47.156 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full 5c4dc6333afa3bc5bb2ff70c33779b61ffa1a673 1bc04039700046387267ea6197c2b5a45e541338 [77ms]
+2024-10-21 18:14:47.962 [info] > git push origin main:main [925ms]
+2024-10-21 18:14:47.962 [info] error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+2024-10-21 18:14:47.968 [info] > git config --get commit.template [5ms]
+2024-10-21 18:14:47.969 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:14:47.970 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:14:47.975 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:14:47.981 [info] > git status -z -uall [5ms]
+2024-10-21 18:14:47.989 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:14:47.995 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:14:47.996 [info] > git config --get commit.template [5ms]
+2024-10-21 18:14:47.999 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:14:47.999 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:14:48.003 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [8ms]
+2024-10-21 18:14:48.006 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2024-10-21 18:14:48.012 [info] > git status -z -uall [6ms]
+2024-10-21 18:14:48.020 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:14:48.026 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:14:48.031 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-10-21 18:14:48.265 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [6ms]
+2024-10-21 18:14:48.270 [info] > git cat-file -s ca29bce420a3f88867ff9e229aa9e43cbac47f34 [5ms]
+2024-10-21 18:14:48.277 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [6ms]
+2024-10-21 18:15:09.821 [info] > git log --oneline --cherry main...main@{upstream} -- [8ms]
+2024-10-21 18:15:10.153 [info] > git pull --tags origin main [331ms]
+2024-10-21 18:15:10.154 [info] From https://github.com/rifaterdemsahin/deliverypilot
+ * branch            main       -> FETCH_HEAD
+2024-10-21 18:15:10.934 [info] > git push origin main:main [780ms]
+2024-10-21 18:15:10.934 [info] error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+2024-10-21 18:15:10.944 [info] > git config --get commit.template [8ms]
+2024-10-21 18:15:10.945 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [8ms]
+2024-10-21 18:15:10.946 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:15:10.951 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:15:10.958 [info] > git status -z -uall [6ms]
+2024-10-21 18:15:10.966 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:15:10.973 [info] > git config --local branch.main.vscode-merge-base [6ms]
+2024-10-21 18:15:10.979 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:15:11.410 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [5ms]
+2024-10-21 18:15:11.415 [info] > git cat-file -s ca29bce420a3f88867ff9e229aa9e43cbac47f34 [5ms]
+2024-10-21 18:15:11.432 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [6ms]
+2024-10-21 18:15:16.703 [info] > git log --oneline --cherry main...main@{upstream} -- [12ms]
+2024-10-21 18:15:17.101 [info] > git pull --tags origin main [396ms]
+2024-10-21 18:15:17.101 [info] From https://github.com/rifaterdemsahin/deliverypilot
+ * branch            main       -> FETCH_HEAD
+2024-10-21 18:15:17.108 [info] > git config --get commit.template [5ms]
+2024-10-21 18:15:17.109 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:15:17.110 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:15:17.114 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2024-10-21 18:15:17.122 [info] > git status -z -uall [7ms]
+2024-10-21 18:15:17.130 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:15:17.136 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:15:17.142 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:15:18.251 [info] > git config --get commit.template [6ms]
+2024-10-21 18:15:18.253 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [8ms]
+2024-10-21 18:15:18.254 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:15:18.259 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:15:18.266 [info] > git status -z -uall [6ms]
+2024-10-21 18:15:18.274 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:15:18.280 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:15:18.286 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:15:18.351 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [5ms]
+2024-10-21 18:15:18.357 [info] > git cat-file -s ca29bce420a3f88867ff9e229aa9e43cbac47f34 [5ms]
+2024-10-21 18:15:18.363 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [5ms]
+2024-10-21 18:15:44.303 [info] > git fetch [313ms]
+2024-10-21 18:15:44.308 [info] > git config --get commit.template [4ms]
+2024-10-21 18:15:44.310 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:15:44.310 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:15:44.315 [info] > git rev-parse refs/remotes/origin/main [5ms]
+2024-10-21 18:15:44.320 [info] > git status -z -uall [5ms]
+2024-10-21 18:15:44.326 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [5ms]
+2024-10-21 18:15:44.331 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-21 18:15:44.336 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [4ms]
+2024-10-21 18:15:45.461 [info] > git config --get commit.template [7ms]
+2024-10-21 18:15:45.464 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [9ms]
+2024-10-21 18:15:45.465 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:15:45.472 [info] > git rev-parse refs/remotes/origin/main [7ms]
+2024-10-21 18:15:45.481 [info] > git status -z -uall [8ms]
+2024-10-21 18:15:45.489 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:15:45.495 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:15:45.501 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [5ms]
+2024-10-21 18:15:45.551 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [5ms]
+2024-10-21 18:15:45.556 [info] > git cat-file -s ca29bce420a3f88867ff9e229aa9e43cbac47f34 [5ms]
+2024-10-21 18:15:45.572 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [4ms]
+2024-10-21 18:15:58.058 [info] > git config --get commit.template [10ms]
+2024-10-21 18:15:58.061 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [10ms]
+2024-10-21 18:15:58.061 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:15:58.068 [info] > git rev-parse refs/remotes/origin/main [7ms]
+2024-10-21 18:15:58.076 [info] > git status -z -uall [7ms]
+2024-10-21 18:15:58.085 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [7ms]
+2024-10-21 18:15:58.092 [info] > git config --local branch.main.vscode-merge-base [6ms]
+2024-10-21 18:15:58.098 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [6ms]
+2024-10-21 18:15:58.153 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [5ms]
+2024-10-21 18:15:58.159 [info] > git cat-file -s ca29bce420a3f88867ff9e229aa9e43cbac47f34 [6ms]
+2024-10-21 18:15:58.165 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [5ms]
+2024-10-21 18:16:05.646 [info] > git log --oneline --cherry main...main@{upstream} -- [21ms]
+2024-10-21 18:16:06.044 [info] > git pull --tags origin main [397ms]
+2024-10-21 18:16:06.044 [info] From https://github.com/rifaterdemsahin/deliverypilot
+ * branch            main       -> FETCH_HEAD
+2024-10-21 18:16:06.845 [info] > git push origin main:main [800ms]
+2024-10-21 18:16:06.845 [info] error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+2024-10-21 18:16:06.855 [info] > git config --get commit.template [9ms]
+2024-10-21 18:16:06.857 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [10ms]
+2024-10-21 18:16:06.858 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/Users/rifaterdemsahin/projects/deliverypilot/.git/refs/remotes/origin/main'
+2024-10-21 18:16:06.864 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2024-10-21 18:16:06.872 [info] > git status -z -uall [7ms]
+2024-10-21 18:16:06.880 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [6ms]
+2024-10-21 18:16:06.886 [info] > git config --local branch.main.vscode-merge-base [5ms]
+2024-10-21 18:16:06.893 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [6ms]
+2024-10-21 18:16:07.312 [info] > git ls-files --stage -- /Users/rifaterdemsahin/projects/deliverypilot/Journey/Loki/cursor_output_loki.md [10ms]
+2024-10-21 18:16:07.321 [info] > git cat-file -s ca29bce420a3f88867ff9e229aa9e43cbac47f34 [8ms]
+2024-10-21 18:16:07.330 [info] > git show --textconv :Journey/Loki/cursor_output_loki.md [7ms]
