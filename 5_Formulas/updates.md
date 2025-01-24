@@ -1,0 +1,3 @@
+- update old repos
+- go over it and get more confident presenting the repos
+- focus on the hands on experience
