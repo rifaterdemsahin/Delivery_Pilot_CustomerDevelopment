@@ -1,3 +1,4 @@
 - too many files > have the repeating files and converge >>> the files in journey
 - repeating the same work > have the init folders
 - need a rifat to guide it > video
+- useful when you are getting stuck
