@@ -1,0 +1,2 @@
+- recruiters in the market dont have the technical skills to assess
+- https://www.youtube.com/watch?v=R3olWTyPEpo&t=301s
